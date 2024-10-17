@@ -41,6 +41,15 @@ This is a completely unreasonable rule in C# and harms the ability to follow dif
 dotnet_diagnostic.SA1204.severity = suggestion
 ```
 
+## SA1413: Use trailing comma in multi-line initializers
+Default `error` 🚒
+
+This is a preposterous idea that came over from JavaScript.  The idea is that in future commits you will only have one line to change if you add something to a list.  It is optimizing a theoretical future for the actual present.
+
+```
+dotnet_diagnostic.SA1413.severity = none
+```
+
 ## SA1505: An opening brace should not be followed by a blank line
 Default `error` 🚒
 
