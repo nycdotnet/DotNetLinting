@@ -156,6 +156,16 @@ This is a whitespace opinion and can be implemented automatically - therefore it
 dotnet_diagnostic.SA1508.severity = suggestion
 ```
 
+## SA1513: Closing brace should be followed by blank line
+Default `error` ☣️
+
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
+
+```
+dotnet_diagnostic.SA1513.severity = suggestion
+```
+
+
 ## SA1516: Elements should be separated by blank line
 Default `error` ☣️
 
