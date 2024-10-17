@@ -31,3 +31,13 @@ This is a completely unreasonable rule in C# and harms the ability to follow dif
 ```
 dotnet_diagnostic.SA1204.severity = suggestion
 ```
+
+## SA1505: An opening brace should not be followed by a blank line
+Default `error` 🚒
+
+This is a fine idea but it is insane to make this an error while a developer is working.
+
+```
+dotnet_diagnostic.SA1505.severity = warning
+```
+
