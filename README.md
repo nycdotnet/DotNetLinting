@@ -92,6 +92,16 @@ This is a whitespace opinion and can be implemented automatically - therefore it
 dotnet_diagnostic.SA1117.severity = suggestion
 ```
 
+## SA1122: Use `string.Empty` for empty strings
+
+Default `error` ☣️
+
+This is literally from a performance bug in .NET 1.0 where the compiler couldn't optimize uses of "" and so many empty strings would get allocated.  This was fixed in .NET 1.1 more than 20 years ago, and there is no benefit to use `string.Empty` except to make your code longer.  It is toxic to make this an error.
+
+```
+dotnet_diagnostic.SA1122.severity = none
+```
+
 ## SA1202: Elements must be ordered by access
 Default `error` ☣️
 
