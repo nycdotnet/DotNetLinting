@@ -1,5 +1,5 @@
 # .NET Linting
-An actionable rant on .NET linting rules
+An actionable rant on .NET linting rules.
 
 # General Principles
 
@@ -23,8 +23,27 @@ The rule is generally a good one but the default severity is completely unreason
 dotnet_diagnostic.IDE2000.severity = warning
 ```
 
+## SA1009: Closing parenthesis should not be preceded by a space
+Default `error` ☣️
+
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
+
+```
+dotnet_diagnostic.SA1009.severity = suggestion
+```
+
+## SA1111: Closing parenthesis should be on line of last parameter
+Default `error` ☣️
+
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
+
+```
+dotnet_diagnostic.SA1111.severity = suggestion
+```
+
+
 ## SA1202: Elements must be ordered by access
-Default `error` 🗑️
+Default `error` ☣️
 
 This is a completely unreasonable rule in C#.  This is a holdover from other programming languages where there was a line which separated public from private.  This is a completely useless rule and it should be suppressed.
 
@@ -42,7 +61,7 @@ dotnet_diagnostic.SA1204.severity = suggestion
 ```
 
 ## SA1413: Use trailing comma in multi-line initializers
-Default `error` 🗑️
+Default `error` ☣️
 
 This is a preposterous idea that came over from JavaScript.  The idea is that in future commits you will only have one line to change if you add something to a list.  It is optimizing a theoretical future for the actual present.
 
