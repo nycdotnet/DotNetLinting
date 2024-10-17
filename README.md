@@ -1,6 +1,8 @@
 # .NET Linting
 An actionable rant on .NET linting rules.
 
+Reference: [Roslyn Analyzers](https://learn.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2022)
+
 # General Principles
 
 As a developer is working, they naturally create "bugs" as they type which will be resolved by the time they finish typing.  It is distracting and counter-productive to display errors that are likely to be fixed in a moment while the developer is working.
@@ -12,6 +14,15 @@ This is a reasonable rule and should be fixed.  However, it makes no sense to ha
 
 ```
 dotnet_diagnostic.CA1822.severity = suggestion
+```
+
+## IDE0058: Expression value is never used
+Default: `error` ☣️
+
+This breaks C# and causes you to add `_ =` all over your code base.  The people who created this rule hate you and especially hate your tidy code base.
+
+```
+dotnet_diagnostic.IDE0058.severity = none
 ```
 
 ## IDE2000: Avoid multiple blank lines
@@ -41,6 +52,25 @@ This is a whitespace opinion and can be implemented automatically - therefore it
 dotnet_diagnostic.SA1111.severity = suggestion
 ```
 
+## SA1116: The parameters should begin on the line after the declaration, whenever the parameter spans across multiple lines
+
+Default `error` ☣️
+
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
+
+```
+dotnet_diagnostic.SA1116.severity = suggestion
+```
+
+## SA1117: The parameters should all be placed on the same line or each parameter should be placed on its own line
+
+Default `error` ☣️
+
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
+
+```
+dotnet_diagnostic.SA1117.severity = suggestion
+```
 
 ## SA1202: Elements must be ordered by access
 Default `error` ☣️
