@@ -14,6 +14,15 @@ This is a reasonable rule and should be fixed.  However, it makes no sense to ha
 dotnet_diagnostic.CA1822.severity = suggestion
 ```
 
+## IDE2000: Avoid multiple blank lines
+Default `error` 🚒
+
+The rule is generally a good one but the default severity is completely unreasonable because it gets in the way while a developer is working.  It is also a duplicate with SA1507.
+
+```
+dotnet_diagnostic.IDE2000.severity = warning
+```
+
 ## SA1202: Elements must be ordered by access
 Default `error` 🗑️
 
@@ -41,3 +50,11 @@ This is a fine idea but it is insane to make this an error while a developer is 
 dotnet_diagnostic.SA1505.severity = warning
 ```
 
+## SA1507: Code should not contain multiple blank lines in a row
+Default `error` 🚒
+
+The rule is generally a good one but the default severity is completely unreasonable because it gets in the way while a developer is working.  It is also a duplicate with IDE2000.
+
+```
+dotnet_diagnostic.SA1507.severity = warning
+```
