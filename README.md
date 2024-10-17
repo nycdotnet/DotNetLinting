@@ -48,7 +48,7 @@ dotnet_diagnostic.IDE2000.severity = warning
 ## S1854: Remove this useless assignment to variable
 Default `error` 🚒
 
-This rule in particular causes breaks while using hot reload with modern .NET.  It is well intentioned but should be a warning.
+This rule in particular causes breaks while using hot reload with modern .NET.  It is well intentioned but should be a warning.  This is implemented by the SonarAnalyzer.
 
 ```
 dotnet_diagnostic.S1854.severity = warning
