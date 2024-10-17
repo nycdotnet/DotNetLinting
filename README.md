@@ -42,7 +42,7 @@ dotnet_diagnostic.SA1204.severity = suggestion
 ```
 
 ## SA1413: Use trailing comma in multi-line initializers
-Default `error` 🚒
+Default `error` 🗑️
 
 This is a preposterous idea that came over from JavaScript.  The idea is that in future commits you will only have one line to change if you add something to a list.  It is optimizing a theoretical future for the actual present.
 
