@@ -22,7 +22,7 @@ dotnet_diagnostic.SA1204.severity = none
 ## SA1204: Static elements must appear before instance elements
 Default `error` 🚒
 
-This is a completely unreasonable rule in C# and harms the ability to follow differences in a file in source control.
+This is a completely unreasonable rule in C# and harms the ability to follow differences in a file in source control.  One might want their IDE to auto-implement this change, in theory, so this rule can be allowed to exist as a suggestion only.
 
 ```
 dotnet_diagnostic.SA1204.severity = suggestion
