@@ -45,6 +45,16 @@ The rule is generally a good one but the default severity is completely unreason
 dotnet_diagnostic.IDE2000.severity = warning
 ```
 
+
+## IDE2003: Blank line required between block and subsequent statement
+Default `error` 🚒
+
+The rule is generally a good one but the default severity is unreasonable because it gets in the way while a developer is working.
+
+```
+dotnet_diagnostic.IDE2003.severity = suggestion
+```
+
 ## S1854: Remove this useless assignment to variable
 Default `error` 🚒
 
