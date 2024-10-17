@@ -1,7 +1,9 @@
 # .NET Linting
 An actionable rant on .NET linting rules.
 
-Reference: [Roslyn Analyzers](https://learn.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2022)
+References:
+  * [Roslyn Analyzers](https://learn.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2022)
+  * [C# Formatting Options](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/csharp-formatting-options)
 
 # General Principles
 
