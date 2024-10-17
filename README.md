@@ -16,6 +16,15 @@ This is a reasonable rule and should be fixed.  However, it makes no sense to ha
 dotnet_diagnostic.CA1822.severity = suggestion
 ```
 
+## IDE0005: Using directive is unnecessary.
+Default: `error` 👎
+
+This should be cleaned up but there is no way this should be an error.
+
+```
+dotnet_diagnostic.IDE0005.severity = warning
+```
+
 ## IDE0058: Expression value is never used
 Default: `error` ☣️
 
