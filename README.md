@@ -125,7 +125,7 @@ Default `error` 🚒
 This is a fine idea but it is insane to make this an error while a developer is working.
 
 ```
-dotnet_diagnostic.SA1505.severity = warning
+dotnet_diagnostic.SA1505.severity = suggestion
 ```
 
 ## SA1507: Code should not contain multiple blank lines in a row
@@ -134,7 +134,7 @@ Default `error` 🚒
 The rule is generally a good one but the default severity is completely unreasonable because it gets in the way while a developer is working.  It is also a duplicate with IDE2000.
 
 ```
-dotnet_diagnostic.SA1507.severity = warning
+dotnet_diagnostic.SA1507.severity = suggestion
 ```
 
 ## SA1508: A closing brace should not be preceeded by a blank line
@@ -143,5 +143,5 @@ Default `error` 🚒
 This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
 
 ```
-dotnet_diagnostic.SA1508.severity = warning
+dotnet_diagnostic.SA1508.severity = suggestion
 ```
