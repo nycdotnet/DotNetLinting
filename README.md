@@ -10,6 +10,15 @@ This is a reasonable rule and should be fixed.  However, it makes no sense to ha
 dotnet_diagnostic.CA1822.severity = warning
 ```
 
+## SA1202: Elements must be ordered by access
+Default `error` 🚒
+
+This is a completely unreasonable rule in C#.  This is a holdover from other programming languages where there was a line which separated public from private.  This is a completely useless rule and it should be suppressed.
+
+```
+dotnet_diagnostic.SA1204.severity = none
+```
+
 ## SA1204: Static elements must appear before instance elements
 Default `error` 🚒
 
