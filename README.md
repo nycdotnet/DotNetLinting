@@ -1,6 +1,10 @@
 # .NET Linting
 An actionable rant on .NET linting rules
 
+# General Principles
+
+As a developer is working, they naturally create "bugs" as they type which will be resolved by the time they finish typing.  It is distracting and counter-productive to display errors that are likely to be fixed in a moment while the developer is working.
+
 ## CA1822: Member does not access instance data and can be marked as static
 Default: `error` 👎
 
