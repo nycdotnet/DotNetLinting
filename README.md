@@ -159,10 +159,10 @@ dotnet_diagnostic.SA1508.severity = suggestion
 ## SA1513: Closing brace should be followed by blank line
 Default `error` ☣️
 
-This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.  This one is also bad with the new implicit enumerable syntax in C# (`[]`) so it should just be disabled.
 
 ```
-dotnet_diagnostic.SA1513.severity = suggestion
+dotnet_diagnostic.SA1513.severity = none
 ```
 
 
