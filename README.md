@@ -54,6 +54,15 @@ This is a whitespace opinion and can be implemented automatically - therefore it
 dotnet_diagnostic.SA1009.severity = suggestion
 ```
 
+## SA1028: Code should not contain trailing whitespace
+Default `error` 🚒
+
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
+
+```
+dotnet_diagnostic.SA1028.severity = warning
+```
+
 ## SA1111: Closing parenthesis should be on line of last parameter
 Default `error` ☣️
 
@@ -126,4 +135,13 @@ The rule is generally a good one but the default severity is completely unreason
 
 ```
 dotnet_diagnostic.SA1507.severity = warning
+```
+
+## SA1508: A closing brace should not be preceeded by a blank line
+Default `error` 🚒
+
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
+
+```
+dotnet_diagnostic.SA1508.severity = warning
 ```
