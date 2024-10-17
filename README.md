@@ -45,6 +45,15 @@ The rule is generally a good one but the default severity is completely unreason
 dotnet_diagnostic.IDE2000.severity = warning
 ```
 
+## S1854: Remove this useless assignment to variable
+Default `error` 🚒
+
+This rule in particular causes breaks while using hot reload with modern .NET.  It is well intentioned but should be a warning.
+
+```
+dotnet_diagnostic.S1854.severity = warning
+```
+
 ## SA1009: Closing parenthesis should not be preceded by a space
 Default `error` ☣️
 
