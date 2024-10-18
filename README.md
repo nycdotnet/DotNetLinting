@@ -184,7 +184,6 @@ This is a whitespace opinion and can be implemented automatically - therefore it
 dotnet_diagnostic.SA1513.severity = none
 ```
 
-
 ## SA1516: Elements should be separated by blank line
 Default `error` ☣️
 
@@ -192,4 +191,13 @@ This is a whitespace opinion and can be implemented automatically - therefore it
 
 ```
 dotnet_diagnostic.SA1516.severity = suggestion
+```
+
+## SA1518: File is required to end with a single newline character
+Default `error` ☣️
+
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
+
+```
+dotnet_diagnostic.SA1518.severity = suggestion
 ```
