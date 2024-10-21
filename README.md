@@ -64,6 +64,15 @@ This rule in particular causes breaks while using hot reload with modern .NET.  
 dotnet_diagnostic.S1854.severity = warning
 ```
 
+## S4457: Split this method in two, one handling the parameters check and one handling the async code
+Default `error` 🚒
+
+This rule can make sense if you're doing a fire and forget sort of thing (aka not `await`ing on the Task) but it's generally not interesting and can lead to code sprawl.
+
+```
+dotnet_diagnostic.S4457.severity = suggestion
+```
+
 ## SA1009: Closing parenthesis should not be preceded by a space
 Default `error` ☣️
 
