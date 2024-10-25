@@ -210,3 +210,12 @@ This is a whitespace opinion and can be implemented automatically - therefore it
 ```
 dotnet_diagnostic.SA1518.severity = suggestion
 ```
+
+## SA1629: Documentation text should end with a period
+Default `error` ☣️
+
+This is an outrage.  This is not Golang which requires stupid comments even on obvious code, and of course it's not smart enough to understand URLs or other technical things that might get corrupted by the addition of a period.  Utterly trash.
+
+```
+dotnet_diagnostic.SA1518.severity = none
+```
