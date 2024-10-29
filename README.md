@@ -193,6 +193,15 @@ This is a whitespace opinion and can be implemented automatically - therefore it
 dotnet_diagnostic.SA1513.severity = none
 ```
 
+## SA1515: Single-line comments should be preceded by blank line
+Default `error` ☣️
+
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.  Also, like, why?
+
+```
+dotnet_diagnostic.SA1516.severity = none
+```
+
 ## SA1516: Elements should be separated by blank line
 Default `error` ☣️
 
