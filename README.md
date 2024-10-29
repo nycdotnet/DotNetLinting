@@ -196,7 +196,7 @@ dotnet_diagnostic.SA1513.severity = none
 ## SA1515: Single-line comments should be preceded by blank line
 Default `error` ☣️
 
-This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.  Also, like, why?
+This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.  This is particularly toxic in multi-property object initializers when trying to explain why something is set to the value it is.
 
 ```
 dotnet_diagnostic.SA1516.severity = none
