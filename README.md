@@ -36,6 +36,15 @@ This breaks C# and causes you to add `_ =` all over your code base.  The people 
 dotnet_diagnostic.IDE0058.severity = none
 ```
 
+## IDE0059: Unnecessary assignment of a value to variable
+Default: `error` ☣️
+
+This is an insane rule - any new variable that you create will have this "error" immediately.  This rule makes C# more like Golang which means it makes it worse.
+
+```
+dotnet_diagnostic.IDE0059.severity = suggestion
+```
+
 ## IDE2000: Avoid multiple blank lines
 Default `error` 🚒
 
