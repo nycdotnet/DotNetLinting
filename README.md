@@ -237,3 +237,12 @@ This is an outrage.  This is not Golang which requires stupid comments even on o
 ```
 dotnet_diagnostic.SA1518.severity = none
 ```
+
+## SA1642: Constructor summary documentation should begin with standard text
+Default `error` ☣️
+
+This could be even worse than SA1629.  It's a constructor - obviously it creates an instance of the relevant class or struct.  What bloat!!  This is not Golang.
+
+```
+dotnet_diagnostic.SA1642.severity = none
+```
