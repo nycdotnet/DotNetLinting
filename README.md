@@ -246,3 +246,16 @@ This could be even worse than SA1629.  It's a constructor - obviously it creates
 ```
 dotnet_diagnostic.SA1642.severity = none
 ```
+
+## C# New Line Before
+
+There was a bug in the ASP.NET Templates for a while which caused else and finally blocks to want to collapse.  While in my opinion, `} else {`, which is preferred in the JS world is totally fine, having a line feed after the else, but not before it pleases no one.  I think C# should use the tall formatting that it has always had.
+
+```
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+```
+
+It should be noted that I believe this problem is somewhat widespread due to the settings in the default .editorconfig distributed with the Visual Studio templates.  In the ASP.NET repo at least, this issue [has been corrected](https://github.com/dotnet/aspnetcore/blob/1a9343b510b37451d99338552d64b7bf8d75d597/.editorconfig#L46-L48) at least.
