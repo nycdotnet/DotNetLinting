@@ -145,7 +145,7 @@ Default `error` ☣️
 This is a completely unreasonable rule in C#.  This is a holdover from other programming languages where there was a line which separated public from private.  This is a completely useless rule and it should be suppressed.
 
 ```
-dotnet_diagnostic.SA1204.severity = none
+dotnet_diagnostic.SA1202.severity = none
 ```
 
 ## SA1204: Static elements must appear before instance elements
