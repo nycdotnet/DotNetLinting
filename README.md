@@ -109,6 +109,14 @@ This is a whitespace opinion and can be implemented automatically - therefore it
 dotnet_diagnostic.SA1111.severity = suggestion
 ```
 
+## SA1114: Parameter List Must Follow Declaration
+
+This is a whitespace opinion and coud be implemented automatically - except the implementation is bugged and disallows comments.  Due to it being bugged, it should just be disabled.
+
+```
+dotnet_diagnostic.SA1116.severity = none
+```
+
 ## SA1116: The parameters should begin on the line after the declaration, whenever the parameter spans across multiple lines
 
 Default `error` ☣️
