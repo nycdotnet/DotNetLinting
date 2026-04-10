@@ -94,10 +94,10 @@ dotnet_diagnostic.SA1008.severity = silent
 ## SA1009: Closing parenthesis should not be preceded by a space
 Default `error` ☣️
 
-This is a whitespace opinion and can be implemented automatically - therefore it should not be an error.
+This breaks primary constructors where the class implements an interface or has a parent.
 
 ```
-dotnet_diagnostic.SA1009.severity = suggestion
+dotnet_diagnostic.SA1009.severity = silent
 ```
 
 ## SA1028: Code should not contain trailing whitespace
