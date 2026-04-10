@@ -82,6 +82,15 @@ This rule can make sense if you're doing a fire and forget sort of thing (aka no
 dotnet_diagnostic.S4457.severity = suggestion
 ```
 
+## SA1008: Opening parenthesis should not be preceded by a space
+Default `error` ☣️
+
+This breaks grouped pattern matching such as `fruit is not ("banana" or "pear")`.
+
+```
+dotnet_diagnostic.SA1008.severity = silent
+```
+
 ## SA1009: Closing parenthesis should not be preceded by a space
 Default `error` ☣️
 
@@ -111,7 +120,7 @@ dotnet_diagnostic.SA1111.severity = suggestion
 
 ## SA1114: Parameter List Must Follow Declaration
 
-This is a whitespace opinion and coud be implemented automatically - except the implementation is bugged and disallows comments.  Due to it being bugged, it should just be disabled.
+This is a whitespace opinion and could be implemented automatically - except the implementation is bugged and disallows comments.  Due to it being bugged, it should just be disabled.
 
 ```
 dotnet_diagnostic.SA1116.severity = none
