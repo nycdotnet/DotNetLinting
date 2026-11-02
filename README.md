@@ -27,6 +27,16 @@ This should be cleaned up but there is no way this should be an error.
 dotnet_diagnostic.IDE0005.severity = warning
 ```
 
+## IDE0011: Add braces
+Default: `none`
+
+I am of the opinion that this removes ambiguity and prevents bugs.  Just use braces even with a single line.
+
+```
+dotnet_diagnostic.IDE0011.severity = warning
+```
+
+
 ## IDE0058: Expression value is never used
 Default: `error` ☣️
 
