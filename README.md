@@ -9,6 +9,10 @@ References:
 
 1. As a developer is working, they naturally create "bugs" as they type which will be resolved by the time they finish typing.  It is distracting and counter-productive to display errors that are likely to be fixed in a moment while the developer is working.
 
+# Enforcing code style
+
+This is hard to achieve without a lot of churn (though AI agents can do it project by project) but when starting a new project, using `<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>` and `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` will keep things moving in the right direction.
+
 ## CA1822: Member does not access instance data and can be marked as static
 Default: `error` 👎
 
